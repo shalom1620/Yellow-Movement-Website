@@ -46,6 +46,7 @@ canvas {
     color: inherit;
   }
 
+  /* Mobile header - use relative positioning */
   .header {
     width: 100% !important;
     height: auto !important;

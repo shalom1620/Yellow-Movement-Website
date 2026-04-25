@@ -170,24 +170,24 @@ textarea{
   height: 136px;
   
 }
-#thank{
-   position: absolute;
- display: none;
-   padding-top: 15px;
-    width: 330px;
-    height: 310px;
-    background-color:#EDC044 ;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top:30%;
-    left:40%;
+#thank {
+  position: fixed;
+  display: none;
+  padding-top: 15px;
+  width: 330px;
+  height: 310px;
+  background-color: #EDC044;
+  border-radius: 25px;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .thankyou p{
    
     margin-top: 0px;
-    padding-bottom: 25px;
+    padding-bottom: 2px;
     text-align: center;
     width: 280px;
     font-weight: bold;
@@ -207,6 +207,8 @@ textarea{
         font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
         color: #ffffff;
         font-size: 15px;
+        margin-top: 0px;
+        
        
 
 }
@@ -329,21 +331,22 @@ textarea{
         <p>saronkifle16@gmail.com</p>
         </div>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const submitBtn = document.getElementById("submit");
-        const backBtn = document.getElementById("back");
-        const thankSection = document.getElementById("thank");
-  
-        submitBtn.addEventListener("click", function () {
-          thankSection.style.visibility = "visible";
-        });
-  
-        backBtn.addEventListener("click", function () {
-          thankSection.style.visibility = "hidden";
-        });
-      });
-    </script>
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const submitBtn = document.getElementById("submit");
+    const backBtn = document.getElementById("back");
+    const thankSection = document.getElementById("thank");
+
+    submitBtn.addEventListener("click", function (e) {
+      e.preventDefault(); 
+      thankSection.style.display = "flex";
+    });
+
+    backBtn.addEventListener("click", function () {
+      thankSection.style.display = "none";
+    });
+  });
+</script>
   
       </body>
     </html>

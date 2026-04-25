@@ -8,18 +8,36 @@ import DonationForm from './components/DonationForm.jsx';
 import BlogForm from './components/BlogForm.jsx';
 import GetInvolvedForm from './components/GetInvolvedForm.jsx';
 
+// Reusable navigation function - all buttons use this for consistency
+const navigateTo = (page) => {
+  window.location.hash = page;
+};
+
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState(() => {
+    const hash = window.location.hash.slice(1);
+    return hash || 'home';
+  });
 
   useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1);
+      setCurrentPage(hash || 'home');
+    };
+    
+    window.addEventListener('hashchange', handleHashChange);
+    
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       setLoading(false);
     });
 
-    return () => unsubscribe();
+    return () => {
+      unsubscribe();
+      window.removeEventListener('hashchange', handleHashChange);
+    };
   }, []);
 
   const handleLogin = (loggedInUser) => {
@@ -28,7 +46,7 @@ function App() {
 
   const handleLogout = () => {
     setUser(null);
-    setCurrentPage('home');
+    window.location.hash = 'home';
   };
 
   if (loading) {
@@ -45,7 +63,7 @@ function App() {
       <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
         {currentPage === 'home' && (
           <div style={{ padding: '40px 20px', textAlign: 'center' }}>
-            <h1>Welcome to Yellow Movement</h1>
+            
             <p style={{ fontSize: '18px', color: '#666' }}>
               Join us in making a positive impact. Donate, share your story, or get involved!
             </p>
@@ -53,41 +71,41 @@ function App() {
               <div style={{ padding: '20px', backgroundColor: '#f9f9f9', borderRadius: '8px', border: '2px solid #f0c346' }}>
                 <h3>Donate</h3>
                 <p>Support our cause with a financial contribution</p>
-                <button onClick={() => setCurrentPage('donate')} style={{
+                <a href="yellowdonate.htm" style={{
+                  display: 'inline-block',
                   padding: '10px 20px',
                   backgroundColor: '#f0c346',
                   color: '#39365d',
-                  border: 'none',
+                  textDecoration: 'none',
                   borderRadius: '4px',
-                  fontWeight: 'bold',
-                  cursor: 'pointer'
-                }}>Donate Now</button>
+                  fontWeight: 'bold'
+                }}>Donate Now</a>
               </div>
               <div style={{ padding: '20px', backgroundColor: '#f9f9f9', borderRadius: '8px', border: '2px solid #39365d' }}>
                 <h3>Share a Story</h3>
                 <p>Publish your blog post and inspire others</p>
-                <button onClick={() => setCurrentPage('blog')} style={{
+                <a href="yellowcreateblog.htm" style={{
+                  display: 'inline-block',
                   padding: '10px 20px',
                   backgroundColor: '#39365d',
                   color: 'white',
-                  border: 'none',
+                  textDecoration: 'none',
                   borderRadius: '4px',
-                  fontWeight: 'bold',
-                  cursor: 'pointer'
-                }}>Share Blog</button>
+                  fontWeight: 'bold'
+                }}>Share Blog</a>
               </div>
               <div style={{ padding: '20px', backgroundColor: '#f9f9f9', borderRadius: '8px', border: '2px solid #39365d' }}>
                 <h3>Get Involved</h3>
                 <p>Volunteer and be part of the movement</p>
-                <button onClick={() => setCurrentPage('involved')} style={{
+                <a href="yellowgetinvolved.htm" style={{
+                  display: 'inline-block',
                   padding: '10px 20px',
                   backgroundColor: '#39365d',
                   color: 'white',
-                  border: 'none',
+                  textDecoration: 'none',
                   borderRadius: '4px',
-                  fontWeight: 'bold',
-                  cursor: 'pointer'
-                }}>Join Us</button>
+                  fontWeight: 'bold'
+                }}>Join Us</a>
               </div>
             </div>
           </div>
@@ -100,15 +118,7 @@ function App() {
       </div>
 
       {/* Footer */}
-      <footer style={{
-        backgroundColor: '#39365d',
-        color: 'white',
-        textAlign: 'center',
-        padding: '20px',
-        marginTop: '50px'
-      }}>
-        <p>© 2026 Yellow Movement. All rights reserved.</p>
-      </footer>
+    
     </div>
   );
 }
