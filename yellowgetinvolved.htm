@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The yellow movement</title>
+    <style>
+
+@media(min-width:1024px){
+  body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .nav{
+       display: none;
+      }
+    .header{
+        width: 100vw;
+    height:  120px;
+  
+        display: flex;
+        
+        align-items: center;
+        background-color: white;
+        gap: 40%;
+       
+      }
+      .logo1{
+        width: calc(381.54px*0.5)  ;
+        height: calc(155px*0.5)  ;
+        margin-left: 30%;
+      }
+         
+ 
+  
+      .header-words{
+        width:660px;
+        height: 54px;
+     
+       
+      }
+      .header-text{
+        font-size: 15px;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        padding:13px;
+        text-decoration: none;
+        color: #39365D;
+        margin-right: 0px;
+        
+        }
+        .header-text:hover{
+          color: #f0c346;
+        }
+.get{
+  background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+         
+}
+      .button{
+       
+        background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+        
+    
+        }
+      
+        .header-text:hover{
+          color: #f0c346;
+        }
+
+      .button{
+        background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+        
+    }
+    .button:hover{
+background-color:bisque;
+}
+main{
+  width: 70vw;
+  display: flex;
+  gap:5%px;
+  justify-content: center;
+  margin-left: 18%;
+}
+h3{
+  font-size:29px;
+    font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+    color:#39365D;
+}
+
+.p1, option{
+  font-size:15px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     max-width: 70%;
+     max-height: 132px;
+}
+label{
+  font-size:15px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     
+    }
+    .leftbottom{
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+.input, select{
+  width:346px;
+  height: 30px;
+  margin: 15px;
+  font-size:18px;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     
+}
+.radio{
+display: flex;
+margin: 20px;
+gap:20px;
+}
+textarea{
+  width:546px;
+  height: 236px;
+  margin: 15px;
+  font-size:18px;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     
+}
+#check{
+  margin-bottom: 30px;
+}
+::placeholder{
+  font-size:15px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     padding-left: 20px;
+}
+.guidelines{
+  margin-top: 10px;
+}
+.smlogo{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    
+}
+.sm{
+display: flex;
+align-items: center;
+}
+a{
+ 
+  font-size:15px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+}
+.righthalf a{
+  text-decoration: none;
+}
+.rightbottom{
+  width:416px;
+  height: 169px;
+  background-color:#f8d062;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+.righthalf{
+  margin-top: 8%;
+}
+.rightbottom p{
+  font-size:15px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+      max-width: 574px;
+      padding: 23px;
+     
+    
+}
+.button2{
+  background-color: #39365D;
+        height: 34px;
+        width: 101px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #ffffff;
+        font-size: 15px;
+       
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+ 
+}
+
+a:hover{
+color: #f0c346;
+}
+.button2:hover{
+  background-color:#817f8f;
+}
+
+
+
+.logobottom{
+     width: calc(105.75px*0.7)  ;
+     height: calc(43px*0.7);
+     padding-top: 20px;
+    }
+    .footer{
+      width: 100vw;
+    
+      display: flex;
+      justify-content: center;
+     gap:350px;
+     margin: 50px 0px 50px 0px;
+    }
+    .footer p{
+      font-size: 0.8em;
+    }
+  }
+
+    </style>
+    <link rel="stylesheet" href="responsive.css" />
+    <script defer src="nav.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img class="logo1" src="yellow logo quality.jpg" />
+      </div>
+      <button class="nav" type="button" aria-label="Menu">
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+        <div class="header-words">
+        <a href="hometrial.html" class="header-text">Home</a>
+        <a href="yellowaboutus2.htm" class="header-text">About</a>
+        <a href="yellowevents.htm" class="header-text">Events</a>
+        <a href="yellowblogs.htm" class="header-text">Blogs</a>
+        <a href="yellowcontact.htm" class="header-text">Contact</a>
+        <a href="yellowgetinvolved.htm"  ><button class="button ">Get involved</button></a>
+        </div>
+      </header>
+
+
+
+      <main>
+        <div class="lefthalf">
+          <div class="lefttop">
+          <h3>Get involved</h3>
+          <p class="p1">If you want to work with Yellow Movement, we welcome collaborations, partnerships, and volunteer support. Get in touch to see how we can make a difference together!</p>
+          </div>
+
+          <div class="leftbottom">
+            <label for="name">Your name</label>
+            <input  class="input" id="name" type="text">
+            <label for="email">Email</label>
+            <input class="input" id="emai" type="text">
+            
+              <label for="drop">Area of interest</label>
+              <select id="drop">
+                <option>volunteering</option>
+                <option>collaboration</option>
+                <option>other</option>
+              </select>
+              
+            <label>Gender</label>
+            <div class="radio">
+            <label for="female">Female</label>
+            <input name="gender" id="female" type="radio">
+            <label for="male">Male</label>
+            <input  name="gender" id="male" type="radio">
+            </div>
+            <label for="tellus">Tell us about yourself</label>
+            <textarea id="telus" type="text" placeholder="Who are you?"></textarea>
+            <div class="guidelines">
+            <input id="check" type="checkbox">
+            <label for="check">I have agreed to the <a href="yellowguidelines.htm">principles of The yellow movement</a></label>
+          </div>
+            <button class="button" class="submit">Submit</button>
+          
+            </div>
+          </div>
+
+
+
+
+       <div class="righthalf">
+<div class="topright">
+  <a href="" ><div class="sm">
+    <img class="smlogo" src="instagram logo.svg">
+    <p class="p">@theyellowmovementaau
+    </p>
+  </div></a>
+    <a href=""><div class="sm">
+      <img  class="smlogo" src="facebook logo.svg">
+      <p class="p">yellow movement aau
+      </p>
+    </div></a>
+    <a href="" ><div class="sm">
+      <img class="smlogo" src="telegram logo.svg">
+      <p class="p">The yellow movement</p>
+    </div></a>
+    <a href="" ><div class="sm">
+      <img class="smlogo" src="tictok logo.svg">
+      <p class="p">The yellow movement</p>
+    </div></a>
+
+</div>
+<div class="rightbottom">
+<p class="p2">
+  Would you like to receive updates, including recruitment opportunities and upcoming initiatives, straight to your email?
+</p>
+<div class="buttons">
+<button class="button2">Yes</button>
+<button class="button2">No</button>
+</div>
+
+
+
+</div>
+
+
+      </div>
+
+
+      </main>
+      
+      
+      
+      <footer class="footer">
+  
+    <img class="logobottom" src="yellow logo quality.jpg" />
+  
+    <div class="contact">
+    <p>Contact</p>
+    <p>saronkifle16@gmail.com</p>
+    </div>
+</footer>
+  </body>
+</html>

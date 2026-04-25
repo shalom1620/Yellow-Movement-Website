@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The yellow movement</title>
+    <style>
+
+@media(min-width:1024px){
+  body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .nav{
+       display: none;
+      }
+    .header{
+        width: 100vw;
+    height:  120px;
+  
+        display: flex;
+        
+        align-items: center;
+        background-color: white;
+        gap: 40%;
+       
+      }
+      .logo1{
+        width: calc(381.54px*0.5)  ;
+        height: calc(155px*0.5)  ;
+        margin-left: 30%;
+      }
+         
+ 
+  
+      .header-words{
+        width:660px;
+        height: 54px;
+     
+       
+      }
+      .header-text{
+        font-size: 15px;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        padding:13px;
+        text-decoration: none;
+        color: #39365D;
+        margin-right: 0px;
+        
+        }
+        .header-text:hover{
+          color: #f0c346;
+        }
+.get{
+  background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+         
+}
+      .button{
+       
+        background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+        
+    
+        }
+      
+        .header-text:hover{
+          color: #f0c346;
+        }
+
+      .button{
+        background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+        
+    }
+    .button:hover{
+background-color:bisque;
+}
+main{
+  width: 70vw;
+  height: 1119px;
+  background-color: rgba(253, 186, 3, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 40px 20px;
+  border-radius: 25px;
+  padding-top:100px ;
+margin-top: 30px;
+margin-left: 13%;
+}
+
+input{
+  font-size:15px;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     border-radius: 10px;
+}
+textarea{
+  border-radius: 15px;
+}
+
+label{
+  display: block;
+  margin: 22px;
+  font-size:18px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+    
+}
+
+.topinput{
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+#name{
+  margin-bottom: 20px;
+}
+
+.middleinput{
+  display: flex;
+ flex-direction: column;
+ 
+}
+ .bottominput{
+  margin-top: 50px;
+
+ }
+
+ .top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:152px;
+ }
+ 
+ 
+  
+
+
+
+
+ 
+  
+
+
+
+.logobottom{
+     width: 105.75px;
+     height: 43px;
+     padding-top: 20px;
+    }
+.shortinput{
+  width:246px;
+  height:30px;
+}
+.longinput{
+  width:700px;
+  height: 600px;
+
+}
+::placeholder{
+  font-size:15px;
+     color:rgba(57, 54, 93, 0.7);
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     padding-left: 20px;
+    
+}
+textarea::placeholder{
+  padding-top: 20px;
+}
+.anon{
+  display: flex;
+}
+
+.wrapper{
+  display: inline-flex;
+  background: #fff;
+  height: 25px;
+  width: 250px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+  
+
+}
+.wrapper .option{
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #EDC044;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+   
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: #808080;
+  background: #EDC044;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 15px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+.anon label{
+  font-size: 15px;
+}
+.anon .button{
+  font-size: 15px;
+}
+
+.logobottom{
+     width: calc(105.75px*0.7)  ;
+     height: calc(43px*0.7);
+     padding-top: 20px;
+    }
+    .footer{
+      width: 100vw;
+    
+      display: flex;
+      justify-content: center;
+     gap:350px;
+     margin: 50px 0px 50px 0px;
+    }
+    .footer p{
+      font-size: 0.8em;
+    }
+  }
+    </style>
+    <link rel="stylesheet" href="responsive.css" />
+    <script defer src="nav.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img class="logo1" src="yellow logo quality.jpg" />
+      </div>
+      <button class="nav" type="button" aria-label="Menu">
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+        <div class="header-words">
+        <a href="hometrial.html" class="header-text">Home</a>
+        <a href="yellowaboutus2.htm" class="header-text">About</a>
+        <a href="yellowevents.htm" class="header-text">Events</a>
+        <a href="yellowblogs.htm" class="header-text">Blogs</a>
+        <a href="yellowcontact.htm" class="header-text">Contact</a>
+        <a href="yellowgetinvolved.htm"  ><button class="button ">Get involved</button></a>
+        </div>
+      </header>
+      
+      <main>
+        <div class="top">
+        <div class="topinput">
+          <div class="name">
+          <label for="name">Name</label>
+        <input id="name" class="shortinput" type="text" placeholder="Enter your name here." required>
+      </div>
+      <div class="blogtitle">
+        <label for="blogtitle">Blog title</label>
+      <input id="blogtite" class="shortinput" type="text" placeholder="Enter your blog title here." required>
+    </div>
+        </div>
+        <div class="middleinput">
+          <div class="email">
+            <label for="email">Email</label>
+            <input id="email" class="shortinput"type="email" placeholder="Enter your email here." required>
+          </div>
+          
+      <div class="gender">
+        <label>Gender</label>
+      <div class="wrapper">
+        <input type="radio" name="select" id="option-1" checked>
+        <input type="radio" name="select" id="option-2">
+          <label for="option-1" class="option option-1">
+            <div class="dot"></div>
+             <span>Female</span>
+             </label>
+          <label for="option-2" class="option option-2">
+            <div class="dot"></div>
+             <span>Male</span>
+          </label>
+       </div>
+        </div>
+      </div>
+      </div>
+      <div class="bottominput">
+      <div class="blog">
+      <label for="blog">Blog</label>
+        <textarea  maxlength="3000" class="longinput" placeholder="Write or paste your blog here." required></textarea>
+      </div>
+       
+        <div class="anon">
+          
+        <input id="anon" type="checkbox">
+        <label for="anon">I want to post anonymously.</label> 
+        </div>
+        <button class="button" type="submit">Submit</button>
+      </div>
+      </main>
+      
+      
+      <footer class="footer">
+  
+    <img class="logobottom" src="yellow logo quality.jpg" />
+  
+    <div class="contact">
+    <p>Contact</p>
+    <p>saronkifle16@gmail.com</p>
+    </div>
+</footer>
+  </body>
+</html>

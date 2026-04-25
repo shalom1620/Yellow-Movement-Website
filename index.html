@@ -1,0 +1,866 @@
+<!--f0c346, 39365d-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The yellow movement</title>
+    
+    <script defer src="nav.js"></script>
+    
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <style>      
+.support {
+  font-size:24px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+   margin-top: 25px;
+     
+}
+
+
+
+.donatebutton {
+  
+  border: 3px solid #39365D;
+  text-decoration: none;
+  width:250px;
+  height: 70px;
+
+}
+
+a{
+  text-decoration: none;
+}
+a h4:hover{
+  color:antiquewhite ;
+}
+a h5:hover{
+color: #F0C346;
+}
+.button:hover{
+background-color:bisque;
+}
+@media only screen and (max-width:768px){
+  body{
+
+        display: flex;
+        flex-direction: column;
+       width:100vw;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        
+      }
+      .nav{
+        
+    position: absolute;
+    left:320px;
+    top: 37px;
+    z-index: 5;
+   
+      }
+      .line{
+        width: 30px;
+        height: 2.5px;
+        background-color: #F0C346;
+        margin-top: 20%;
+      }
+     
+    .header{
+        width: 40%;
+    height: 27px;
+    padding: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+      
+       
+        
+       
+      }
+
+      .logo1{
+        width: calc(381.54px*0.25)  ;
+        height: calc(155px*0.25)  ;
+      }
+  
+      .header-words{
+        width:40vw;
+        height: auto;
+        padding:10px 0px 10px 0px ;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        background-color: antiquewhite;
+        border-radius: 20px;
+        position: absolute;
+        left:230px;
+        top: 40px;
+        z-index: 10;
+        visibility: hidden;
+        align-items: center;
+   
+     
+       
+      }
+      .header-text{
+        
+        font-size: 18px;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+       
+        text-decoration: none;
+        color: #39365D;
+        align-items: center;
+        margin-bottom: 8%;
+        
+        }
+        .header-text:hover{
+          color: #f0c346;
+        }
+      .get{
+        background-color: #f0c346;
+        height: 34px;
+        width: 135px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 18px;
+        
+      }
+
+      .button{
+       
+        background-color: #f0c346;
+        height: 54px;
+        width: 160px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 20px;
+        
+    
+        }
+.intro{
+  height: 756px;
+  width: 100dvw;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+ 
+ background-image: url(backgroundmob.png);
+ background-repeat: no-repeat;
+ background-size:cover;
+ align-items: center;
+ 
+}
+
+      
+        
+      
+      .moto{
+      
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        font-size: 41px;
+        font-weight: bold;
+        color:#39365D;
+        display: flex;
+        flex-direction: column;
+     justify-self: center;
+     align-items: center;
+       
+    
+        text-align: center;
+        
+      
+      }  
+      .donation{
+  display: flex;
+height:15px ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:102%;
+  
+
+  
+ }     
+.support {
+  font-size:16px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+   margin-top: 10px;
+     
+}
+
+
+
+.donatebutton {
+  
+  border: 1px solid #39365D;
+  text-decoration: none;
+  width:150px;
+  height: 70px;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+.about-us{
+width: 100dvw;
+        display: flex;
+        flex-direction: column-reverse;  
+align-items: center;
+justify-content: center;
+
+       gap:100px;
+       margin:4% 0px 0px 0px 0px;
+      
+        
+      }
+    
+      .us{
+      max-width: 737px;
+      width:80%;
+        border-radius: 25px;
+       display: none;
+      }
+      .about{
+    
+        font-size:38px;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color:#39365D;
+
+      }
+      .aboutparagraph{
+        width: 90vw;
+     margin: 40px auto 40px auto;
+        font-size:20px;
+        color:#39365D;
+        font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+      
+       
+      }
+      .aboutbutton{
+       
+        margin-top: 30px;
+
+       }
+       .events{
+     
+    width: 100dvw;
+     display: flex;
+     flex-direction: column;
+     margin-top:80px ;
+     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+      align-items: center;
+     }
+     .events1{
+      align-items: center;
+      margin-top:25px ;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+
+      gap: 40px;
+      
+       
+     }
+     .events2{
+      margin-top:20px ;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      gap: 40px;
+     
+    }
+    .event{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      
+      
+    }
+   
+  .eventimg{
+    width:calc(559px*0.6) ;
+    height:calc(398px*0.6) ;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-bottom: 5px;
+
+   }
+   .events p{
+   
+     max-width:559px;
+     width: 85vw;
+     font-size:20px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     margin-bottom: 20px;
+     margin-top: 0;
+   }
+   .events h5{
+    max-width:559px;
+    font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+    font-size: 25px;
+    color:#39365D;
+    margin-bottom: 5px;
+    margin-top: 6px;
+   align-content: left;
+   }
+   .blogs{
+    width: 100dvw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .blog-intro{
+    font-size:20px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     margin: 20px;
+   
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     background-color: #f0c346;
+     align-items: center;
+     justify-content: center;
+    
+    border-radius: 20px;
+    text-decoration: none;
+   
+    
+    
+   
+   }
+
+   .blog-intro p{
+   text-align: left;
+   max-width: 90%;
+
+   margin-top: 10px;
+   padding-bottom: 15px;
+   }
+   .blog-intro h4{
+    
+    max-width: 90%;
+    margin-bottom: 0px;
+    text-decoration: underline;
+    text-align: center;
+
+   }
+
+   .organizations{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+   }
+   .organizations img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 15px;
+    
+
+   }
+   .homefooter{
+    
+    
+    width:98dvw;
+    margin-top: 50px;
+    border: 4px solid #F0C346;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    
+   }
+
+   .smlogo{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  
+   }
+   .logobottom{
+    margin-top: 57px;
+    width: 75px;
+    height: 30px;
+    
+   }
+   .homefooter p{
+    font-size:18px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     margin: 0px;
+     position: relative;
+     
+   }
+   .allsmogos{
+    padding-bottom: 40px;
+   }
+
+}
+@media(min-width:1024px){
+  body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .nav{
+       display: none;
+      }
+    .header{
+        width: 100vw;
+    height:  120px;
+  
+        display: flex;
+        
+        align-items: center;
+        background-color: white;
+        gap: 40%;
+       
+      }
+      .logo1{
+        width: calc(381.54px*0.5)  ;
+        height: calc(155px*0.5)  ;
+        margin-left: 30%;
+      }
+         
+ 
+  
+      .header-words{
+        width:660px;
+        height: 54px;
+     
+       
+      }
+      .header-text{
+        font-size: 15px;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        padding:13px;
+        text-decoration: none;
+        color: #39365D;
+        margin-right: 0px;
+        
+        }
+        .header-text:hover{
+          color: #f0c346;
+        }
+.get{
+  background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+         
+}
+      .button{
+       
+        background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+        
+    
+        }
+.intro{
+   width: 100vw;
+  height: 620PX;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  background-image: url(backgroundA.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+ 
+}
+.donation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+ } 
+
+ .support {
+  font-size:15px;
+     color:#494761;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+   margin-top: 10px;
+     
+}
+      
+        
+      
+      .moto{
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        font-size: 50px;
+        font-weight: bold;
+        color:#494761;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+      }  
+      .about-us{
+        display: flex;
+       justify-content: center;
+       gap:60px;
+       margin-top: 110px;
+      
+        
+      }
+    
+      .us{
+      max-width: calc(737px*0.7);
+      height: calc(668px*0.7) ;
+        border-radius: 25px;
+      }
+      .about{
+    margin-top: 0px;
+        font-size:44px;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color:#39365D;
+
+      }
+      .aboutparagraph{
+        width: 388px;
+     
+        font-size:18px;
+        color:#39365D;
+        font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+      }
+      .aboutbutton{
+       
+        margin-top: 35px;
+
+       }
+       .events{
+     
+    width: 100vw;
+     display: flex;
+     flex-direction: column;
+     margin-top:80px ;
+    
+    justify-content: center;
+      align-items: center;
+     }
+     .events1{
+      
+      align-items: center;
+      margin-top:25px ;
+       display: flex;
+       justify-content: center;
+
+      gap: 40px;
+      
+       
+     }
+     .events2{
+      margin-top:20px ;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      gap: 40px;
+     
+    }
+   
+  .eventimg{
+    width:calc(559px*0.6);
+    height:calc(398px*0.6);
+    object-fit: cover;
+    border-radius: 25px;
+   }
+   .events p{
+   
+     max-width:calc(559px*0.6);
+     font-size:18px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     
+   }
+   .events h5{
+    max-width:calc(559px*0.6);
+    font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+    font-size: 24px;
+    color:#39365D;
+    margin: 10px 0px;
+    
+   }
+   .blogs{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   }
+   .blog-intro{
+    font-size:18px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     margin: 20px auto;
+     max-width: 1600px;
+     width:80%;
+     height: 181;
+     display: flex;
+     flex-direction: column;
+     background-color: #f0c346;
+    border-radius: 20px;
+    text-decoration: none;
+    min-width: 420px;
+    
+    
+   
+   }
+
+   .blog-intro p{
+
+   max-width: 1400px;
+   margin-left: 40px;
+   margin-top: 10px;
+   }
+   .blog-intro h4{
+    
+    margin-left: 40px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+
+   }
+  
+   .organizations{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 70px;
+   }
+   .organizations img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 25px;
+   }
+    .homefooter{
+    margin-top: 80px;
+    border: 4px solid #F0C346;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+
+   .smlogo{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  
+   }
+   .logobottom{
+    width: calc(381.54px*0.35)  ;
+    height: calc(155px*0.35)  ;
+    margin-top: 57px;;
+   }
+   .homefooter p{
+    font-size:18px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     margin: 0px;
+     position: relative;
+     
+   }
+   .allsmogos{
+    padding-bottom: 20px;
+   }
+   }
+
+
+ 
+    </style>
+    <link rel="stylesheet" href="responsive.css" />
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img class="logo1" src="yellow logo quality.jpg" />
+      </div>
+
+      <button class="nav" type="button" aria-label="Menu">
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+        <div class="header-words" >
+        <a href="index.html" class="header-text">Home</a>
+        <a href="yellowaboutus2.htm" class="header-text">About</a>
+        <a href="yellowevents.htm" class="header-text">Events</a>
+        <a href="yellowblogs.htm" class="header-text">Blogs</a>
+        <a href="yellowcontact.htm" class="header-text">Contact</a>
+        <a href="yellowgetinvolved.htm" ><button class="get">Get involved</button></a>
+        
+        <div class="two-lines">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            </div>
+        </div>
+      </header>
+        
+      <div class="intro">
+        <div>
+        
+        <h1 class="moto">Empowering change through action,
+                       <br><span class="secondline">collaboration, and innovation.</span></h1>
+                      </div>
+         <div class="donation"> 
+      <a href="yellowdonate.htm"><button class="button donatebutton"><b>DONATE NOW!</b></button></a>
+      <p class="support">Support the movement.</p>               
+      </div>
+      
+
+
+      
+    </div>
+
+      <div class="about-us">
+        <img src="aboutuspiccropped.jpg" class="us"/>
+        <div class="about-us-writing">
+        <h1 class="about">About us</h1>
+        <p class="aboutparagraph">Yellow Movement is a university-based organization committed to advocating for social change, community empowerment, and youth engagement. Rooted in a culture of activism, we strive to promote inclusivity, awareness, and meaningful action within and beyond our campus. 
+
+          <br><br>Through collaborative initiatives and student-driven efforts, we aim to inspire individuals to take part in shaping a better, more just society. Join us in making a difference, one step at a time.</p>
+          <div class="aboutbutton"><a href="yellowaboutus2.htm" ><button class="button">Learn more</button></a></div>
+        </div>
+        </div>
+<div class="events">
+  <h1 class="about">Events</h1>
+  <div class="events1">
+    <a href=""><div class="event" class="event1">
+    <img src="coming soon.jpg" class="eventimg"/>
+    <h5>March 8</h5>
+    <p>Stay tuned for a special event as we celebrate and advocate for women's empowerment.</p>
+  </div></a>
+
+  <a href=""><div class="event" class="event2">
+    <img src="menteegradsample.jpg" class="eventimg"/>
+    <h5>Mentee graduation</h5>
+    <p>Celebrating the achievements of women who completed our mentorship program.</p>
+  </div></a>
+  <a href=""><div class="event" class="event3">
+    <img src="yellow week.jpg" class="eventimg"/>
+    <h5>Yellow week</h5>
+    <p>A week-long training program empowering selected women with valuable skills.</p>
+  </div></a>
+</div>
+
+<div class="events2">
+  <a href=""> <div class="event" class="event4">
+    <img src="tableday1.png" class="eventimg"/>
+    <h5>Table day</h5>
+    <p>An open discussion platform where we engage the public in conversations about controversial and thought-provoking topics.</p>
+  </div>
+  </a>
+  <a href=""><div class="event" class="event5">
+    <img src="poetry.png" class="eventimg"/>
+    <h5>Poetry and film screening</h5>
+    <p>A space for students to share their voices through poetry performances and a curated film screening experience.</p>
+  </div></a>
+  <a href=""><div class="event" class="event6">
+    <img src="guada.png" class="eventimg"/>
+    <h5>Ye guada taricoch</h5>
+  <p>A creative videography contest showcasing powerful stories and perspectives.</p>
+  </div></a>
+</div>
+ 
+  <a href="yellowevents.htm"  style="margin: 55px;"><button class="button">Learn more</button></a>
+</div>
+
+<div class="blogs">
+
+  <h1 class="about" id="title">Recent blogs</h1>
+  <a href=""><div class="blog-intro">
+    
+  <h4>Creating Change on Campus</h4>
+  <p>University students have always been at the forefront of social change. Through passion and collective action, they challenge norms, raise awareness, and push for a better future...</p>
+  </div></a>
+  <a href=""><div class="blog-intro">
+    <h4> Art as a Tool for Advocacy: Expressing Change Through Creativity</h4>
+    <p>From poetry to filmmaking, art has the power to inspire movements. By sharing stories and perspectives, creative expression becomes a force for awareness and change...</p>
+    </div></a>
+    <a href=""><div class="blog-intro">
+      <h4>Building Communities That Inspire: The Role of Youth in Social Change</h4>
+      <p>Change starts with people coming together for a cause. When young individuals unite, they create strong communities that drive meaningful impact and lasting progress... </p>
+      </div></a>
+      <a href="yellowblogs.htm"  style="margin: 55px;"><button class="button">Read more</button></a>
+  
+</div>
+
+<div class="organizations">
+<a href="https://plan-international.org/un/our-priorities/youth-advocacy/she-leads/"><img src="planlogo.png"></a>
+<a href="https://plan-international.org/un/our-priorities/youth-advocacy/she-leads/"><img src="planlogo.png"></a>
+<a href="https://plan-international.org/un/our-priorities/youth-advocacy/she-leads/"><img src="planlogo.png"></a>
+<a href="https://plan-international.org/un/our-priorities/youth-advocacy/she-leads/"><img src="planlogo.png"></a>
+<a href="https://plan-international.org/un/our-priorities/youth-advocacy/she-leads/"><img src="planlogo.png"></a>
+<a href="https://plan-international.org/un/our-priorities/youth-advocacy/she-leads/"><img src="planlogo.png"></a>
+</div>
+
+
+  <footer class="homefooter">
+    <img src="yellow logo quality.jpg" class="logobottom"/>
+    <p>Be part of the change you want to see.</p>
+    <p><b>Follow us on social media:</b></p>
+    <div class="allsmogos">
+    <a href="" ><img class="smlogo" src="instagram logo.svg"></a>
+    <a href=""><img  class="smlogo" src="facebook logo.svg"></a>
+    <a href="" ><img class="smlogo" src="telegram logo.svg"></a>
+    <a href="" ><img class="smlogo" src="tictok logo.svg"></a>
+    </div>
+  
+  
+      
+     
+ </footer>  </body>
+</html>
+
+  </body>
+  </html>

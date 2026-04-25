@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The yellow movement</title>
+    <style>
+@media(min-width:1024px){
+  body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      .nav{
+       display: none;
+      }
+    .header{
+        width: 100vw;
+    height:  120px;
+  
+        display: flex;
+        
+        align-items: center;
+        background-color: white;
+        gap: 40%;
+       
+      }
+      .logo1{
+        width: calc(381.54px*0.5)  ;
+        height: calc(155px*0.5)  ;
+        margin-left: 30%;
+      }
+         
+ 
+  
+      .header-words{
+        width:660px;
+        height: 54px;
+     
+       
+      }
+      .header-text{
+        font-size: 15px;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        padding:13px;
+        text-decoration: none;
+        color: #39365D;
+        margin-right: 0px;
+        
+        }
+        .header-text:hover{
+          color: #f0c346;
+        }
+.get{
+  background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+         
+}
+      .button{
+       
+        background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+        
+    
+        }
+      
+        .header-text:hover{
+          color: #f0c346;
+        }
+
+      .button{
+        background-color: #f0c346;
+        height: 38px;
+        width: 130px;
+        border-radius:40px;
+        text-align: center;
+        text-decoration: none;
+        font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+        color: #39365D;
+        font-size: 15px;
+        
+    }
+    .button:hover{
+background-color:bisque;
+}
+  .logobottom{
+     width: 105.75px;
+     height: 43px;
+     padding-top: 20px;
+    }
+
+
+
+    .events{
+     display: flex;
+     flex-direction: column;
+     margin-top:8px ;
+     align-items: center;
+     }
+     .events1, .events2, .events3, .events4, .events5, .events6 {
+      align-items: center;
+      margin-top:25px ;
+       display: flex;
+       justify-content: center;
+       gap: 40px;
+       margin-bottom: 40px;
+      
+       
+     }
+   
+   
+   
+  .eventimg{
+    width:calc(559px*0.6);
+    height:calc(398px*0.6);
+    object-fit: cover;
+    border-radius:25px 25px 0px 0px;
+    margin-bottom: 0px;
+
+   }
+   .events p{
+   
+     max-width:calc(559px*0.6);
+     font-size:18px;
+     color:#39365D;
+     font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+     width: calc(520px*0.6);
+     height: calc(100px*0.6);
+   }
+   .events h5{
+    max-width:540px;
+    font-family: "Lucida Sans", Lucida Sans Unicode, serif;
+    font-size: 22px;
+    color:#39365D;
+    margin: 15px;
+   }
+   .about{
+    
+    font-size:44px;
+    font-family:"Lucida Sans", Lucida Sans Unicode, serif ;
+    color:#39365D;
+   }
+   .eventdescription{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    gap: 20px;
+    width:  calc(535px*0.6);
+    height: calc(300px*0.5);
+    background-color: bisque;
+    margin-top: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 28px;
+    border-radius: 0px 0px 25px 25px;
+    justify-content: center;
+   }
+
+   .event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+  
+   a{
+  text-decoration: none;
+}
+
+a h5:hover{
+color: #F0C346;
+}
+.button:hover{
+background-color:bisque;
+}
+
+.logobottom{
+     width: calc(105.75px*0.7)  ;
+     height: calc(43px*0.7);
+     padding-top: 20px;
+    }
+.footer{
+      width: 100vw;
+    
+      display: flex;
+      justify-content: center;
+     gap:350px;
+     margin: 50px 0px 50px 0px;
+    }
+    .footer p{
+      font-size: 0.8em;
+    }
+  } 
+
+  
+
+    </style>
+    <link rel="stylesheet" href="responsive.css" />
+    <script defer src="nav.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img class="logo1"  src="yellow logo quality.jpg" />
+      </div>
+      <button class="nav" type="button" aria-label="Menu">
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+        <div class="header-words">
+        <a href="hometrial.html" class="header-text">Home</a>
+        <a href="yellowaboutus2.htm" class="header-text">About</a>
+        <a href="yellowevents.htm" class="header-text">Events</a>
+        <a href="yellowblogs.htm" class="header-text">Blogs</a>
+        <a href="yellowcontact.htm" class="header-text">Contact</a>
+        <a href="yellowgetinvolved.htm"  ><button class="button ">Get involved</button></a>
+        </div>
+      </header>
+       
+
+      <div class="events">
+        <h1 class="about">Events</h1>
+        <div class="events1">
+          <a href=""><div class="event" class="event1">
+          <img src="coming soon.jpg" class="eventimg"/>
+          <div class="eventdescription">
+          <h5>March 8</h5>
+          <p>Stay tuned for a special event as we celebrate and advocate for women's empowerment.</p>
+          <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+          </div>
+        </div></a>
+      
+        <a href=""><div class="event" class="event2">
+          <img src="menteegradsample.jpg" class="eventimg"/>
+          <div class="eventdescription">
+          <h5>Mentee graduation</h5>
+          <p>Celebrating the achievements of women who completed our mentorship program.</p>
+          <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+          </div>
+        </div></a>
+        <a href="yelloweventdetail.htm"><div class="event" class="event3">
+          <img src="yellow week.jpg" class="eventimg"/>
+          <div class="eventdescription">
+          <h5>Yellow week</h5>
+          <p>A week-long training program empowering selected women with valuable skills.</p>
+          <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+          </div>
+        </div></a>
+      </div>
+      
+      <div class="events2">
+        <a href=""> <div class="event" class="event4">
+          <img src="tableday1.png" class="eventimg"/>
+          <div class="eventdescription">
+          <h5>Table day</h5>
+          <p>An open discussion platform where we engage the public in conversations about controversial and thought-provoking topics.</p>
+          <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+          </div>
+        </div>
+        </a>
+        <a href=""><div class="event" class="event5">
+          <img src="poetry.png" class="eventimg"/>
+          <div class="eventdescription">
+          <h5>Poetry and film screening</h5>
+          <p>A space for students to share their voices through poetry performances and a curated film screening experience.</p>
+          <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+          </div>
+        </div></a>
+        <a href=""><div class="event" class="event6">
+          <img src="guada.png" class="eventimg"/>
+          <div class="eventdescription">
+          <h5>Ye guada taricoch</h5>
+        <p>A creative videography contest showcasing powerful stories and perspectives.</p>
+        <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+        </div>
+        </div></a>
+      </div>
+      <div class="events3">
+        <a href=""><div class="event" class="event7">
+        <img src="eventsamplepic.png" class="eventimg"/>
+        <div class="eventdescription">
+        <h5>March 8</h5>
+        <p>Stay tuned for a special event as we celebrate and advocate for women's empowerment.</p>
+        <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+        </div>
+      </div></a>
+    
+      <a href=""><div class="event" class="event8">
+        <img src="eventsamplepic.png" class="eventimg"/>
+        <div class="eventdescription">
+        <h5>Mentee graduation</h5>
+        <p>Celebrating the achievements of women who completed our mentorship program.</p>
+        <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+        </div>
+      </div></a>
+      <a href=""><div class="event" class="event9">
+        <img src="eventsamplepic.png" class="eventimg"/>
+        <div class="eventdescription">
+        <h5>Yellow week</h5>
+        <p>A week-long training program empowering selected women with valuable skills.</p>
+        <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+       </div>
+      </div></a>
+    </div>
+    <div class="events4">
+      <a href=""><div class="event" class="event10">
+      <img src="eventsamplepic.png" class="eventimg"/>
+      <div class="eventdescription">
+      <h5>March 8</h5>
+      <p>Stay tuned for a special event as we celebrate and advocate for women's empowerment.</p>
+      <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+      </div>
+    </div></a>
+  
+    <a href=""><div class="event" class="event11">
+      <img src="eventsamplepic.png" class="eventimg"/>
+      <div class="eventdescription">
+      <h5>Mentee graduation</h5>
+      <p>Celebrating the achievements of women who completed our mentorship program.</p>
+      <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+      </div>
+    </div></a>
+    <a href=""><div class="event" class="event12">
+      <img src="eventsamplepic.png" class="eventimg"/>
+      <div class="eventdescription">
+      <h5>Yellow week</h5>
+      <p>A week-long training program empowering selected women with valuable skills.</p>
+      <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+      </div>
+    </div></a>
+    </div>
+    <div class="events5">
+      <a href=""><div class="event" class="event13">
+      <img src="eventsamplepic.png" class="eventimg"/>
+      <div class="eventdescription">
+      <h5>March 8</h5>
+      <p>Stay tuned for a special event as we celebrate and advocate for women's empowerment.</p>
+      <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+      </div>
+    </div></a>
+  
+    <a href=""><div class="event" class="event14">
+      <img src="eventsamplepic.png" class="eventimg"/>
+      <div class="eventdescription">
+      <h5>Mentee graduation</h5>
+      <p>Celebrating the achievements of women who completed our mentorship program.</p>
+      <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+      </div>
+    </div></a>
+    <a href=""><div class="event" class="event15">
+      <img src="eventsamplepic.png" class="eventimg"/>
+      <div class="eventdescription">
+      <h5>Yellow week</h5>
+      <p>A week-long training program empowering selected women with valuable skills.</p>
+      <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+      </div>
+    </div></a>
+  </div>
+  <div class="events6">
+    <a href=""><div class="event" class="event16">
+    <img src="eventsamplepic.png" class="eventimg"/>
+    <div class="eventdescription">
+    <h5>March 8</h5>
+    <p>Stay tuned for a special event as we celebrate and advocate for women's empowerment.</p>
+    <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+    </div>
+  </div></a>
+
+  <a href=""><div class="event" class="event17">
+    <img src="eventsamplepic.png" class="eventimg"/>
+    <div class="eventdescription">
+    <h5>Mentee graduation</h5>
+    <p>Celebrating the achievements of women who completed our mentorship program.</p>
+    <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+    </div>
+  </div></a>
+  <a href=""><div class="event" class="event18">
+    <img src="eventsamplepic.png" class="eventimg"/>
+    <div class="eventdescription">
+    <h5>Yellow week</h5>
+    <p>A week-long training program empowering selected women with valuable skills.</p>
+    <a href="yelloweventdetail.htm"><button class="button">Read more</button></a>
+    </div>
+  </div></a>
+</div>
+  </div>
+        
+      </div>
+      
+      
+      
+      
+      <footer class="footer">
+  
+    <img class="logobottom" src="yellow logo quality.jpg" />
+  
+    <div class="contact">
+    <p>Contact</p>
+    <p>saronkifle16@gmail.com</p>
+    </div>
+</footer>
+  </body>
+</html>
