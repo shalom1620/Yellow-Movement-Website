@@ -1,17 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/yellowaboutus2.htm", "destination": "/yellowaboutus2.htm" },
-    { "source": "/yellowaboutus.htm", "destination": "/yellowaboutus.htm" },
-    { "source": "/yellowevents.htm", "destination": "/yellowevents.htm" },
-    { "source": "/yellowblogs.htm", "destination": "/yellowblogs.htm" },
-    { "source": "/yellowcontact.htm", "destination": "/yellowcontact.htm" },
-    { "source": "/yellowgetinvolved.htm", "destination": "/yellowgetinvolved.htm" },
-    { "source": "/yellowdonate.htm", "destination": "/yellowdonate.htm" },
-    { "source": "/yellowcreateblog.htm", "destination": "/yellowcreateblog.htm" },
-    { "source": "/yellowblogdetail.htm", "destination": "/yellowblogdetail.htm" },
-    { "source": "/yelloweventdetail.htm", "destination": "/yelloweventdetail.htm" },
-    { "source": "/yellowguidelines.htm", "destination": "/yellowguidelines.htm" },
-    { "source": "/index.html", "destination": "/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+
 }
